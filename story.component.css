@@ -1,0 +1,10 @@
+.storybox{
+
+    box-shadow: 0px 0px 2px 1px #888888;
+    margin: 15px;
+    }
+    
+    .storyimage{
+        height: 150px;
+        width: 100%;
+    }

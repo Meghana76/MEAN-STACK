@@ -1,0 +1,59 @@
+<div id = "bg" class="view  jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('https://image.freepik.com/free-photo/books-on-bookshelf-blue-background-vintage-toned-education-back-to-school-theme_78240-14.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+  
+<div class="container">
+  <form class="form-horizontal" role="form">
+      <div align="center"><h1>Happy Writing!!!</h1></div>
+      <div class="form-group">
+          <label for="title" class="col-sm-3 control-label">Title</label>
+
+          <div class="col-sm-5">
+              <input [(ngModel)]="title" name="title" type="text" class="form-control" autofocus>
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="title" class="col-sm-3 control-label">Author</label>
+
+          <div class="col-sm-5">
+              <input [(ngModel)]="author" name="author" type="text" class="form-control" autofocus>
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="title" class="col-sm-3 control-label">storypic</label>
+
+          <div class="col-sm-5">
+              <input [(ngModel)]="storypic" name="storypic" type="text" class="form-control" autofocus>
+          </div>
+      </div>
+       <div class="form-group">
+          <label for="story" class="col-sm-3 control-label">Genre
+            <div class="col-sm-5">
+          <select name="genre" id="default" [(ngModel)]="genre">
+
+              <option value="genre">--Select One--</option> 
+              <option value="Adventure">Adventure</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Fiction">Fiction</option>
+              <option value="Romance">Romance</option>
+              <option value="Motivation">Motivation</option>
+              <option value="Horror">Horror</option>
+              <option value="Fantasy">Fantasy</option>
+
+          </select>   
+            </div>
+        </label>
+       </div>  
+       <div class="form-group">
+          <div class="col-sm-5">
+          <label for="description" class="col-sm-3 control-label">Content</label>
+          <textarea name="description" [(ngModel)]="description" rows="4" cols="50"></textarea>
+          <div class="col-sm-5">
+            </div>
+          
+          </div>
+     </div>
+    <button (click)="finish()" class="btn btn-primary my-2 my-sm-0" type="submit">finish</button>
+  </form> 
+</div> 
+
+
+

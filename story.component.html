@@ -1,0 +1,9 @@
+<div *ngIf="story" (click)="gotoStory()" class="card cardbox" style="width: 18rem;">
+    <img class="card-img-top storyimage" src="{{story.storypic}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{story.title}}</h5>
+      <p class="card-text">{{story.genre}}</p>
+      <i class="fas fa-thumbs-up">10</i>
+      <i class="fas fa-comment" style="float:right">5</i>
+    </div>
+  </div>
